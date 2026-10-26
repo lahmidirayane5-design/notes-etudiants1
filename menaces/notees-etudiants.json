@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 510,
+              "x": 500,
               "y": 170
             },
             "size": {
@@ -31,13 +31,14 @@
                 "text": "Api web\n"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "8b6bf758-675e-4c38-b32a-336e81fb7c6b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Api web\n",
@@ -129,12 +129,73 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "d74477f4-636c-46bc-97f0-9d6296d9723f",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Usurpation d'identité",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "d0f64f4f-b82f-42d1-a996-95804d5e49a5",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Falsification",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "3239fff2-eea7-4406-9237-ecf455138de5",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Répudiation",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "7faacc34-5e4d-49de-9088-0067ef942175",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Divulgation d'information",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -151,16 +212,19 @@
                 "text": "base de données \n"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -244,7 +308,6 @@
               ]
             },
             "id": "e2d7cd12-9558-4dde-930d-26b5ad3d72ff",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "base de données \n",
@@ -252,13 +315,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8ff32d83-e691-4639-8b46-eebf3c11daf6",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Répudiation",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "f4401d3c-7d59-45f5-96fc-1342f0d2ca8c",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Divulgation d'information",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -299,7 +395,7 @@
             ],
             "id": "3eaf3bc4-a843-4c8b-9776-f86c5b8ce0b2",
             "source": {
-              "x": 930,
+              "x": 920,
               "y": 239
             },
             "target": {
@@ -308,11 +404,11 @@
             },
             "vertices": [
               {
-                "x": 790,
+                "x": 780,
                 "y": 160
               },
               {
-                "x": 750,
+                "x": 740,
                 "y": 160
               }
             ]
@@ -414,7 +510,7 @@
             ],
             "id": "9777314a-b02a-499a-9063-7b815b1be88c",
             "source": {
-              "x": 243,
+              "x": 233,
               "y": 60
             },
             "target": {
@@ -423,11 +519,11 @@
             },
             "vertices": [
               {
-                "x": 370,
+                "x": 360,
                 "y": 60
               },
               {
-                "x": 470,
+                "x": 460,
                 "y": 130
               }
             ]
@@ -539,7 +635,7 @@
             },
             "vertices": [
               {
-                "x": 380,
+                "x": 370,
                 "y": 250
               }
             ]
@@ -591,11 +687,11 @@
             },
             "vertices": [
               {
-                "x": 300,
+                "x": 290,
                 "y": 350
               },
               {
-                "x": 420,
+                "x": 410,
                 "y": 370
               }
             ]
@@ -647,12 +743,16 @@
             },
             "vertices": [
               {
-                "x": 400,
+                "x": 390,
                 "y": 150
               },
               {
-                "x": 380,
+                "x": 370,
                 "y": 130
+              },
+              {
+                "x": 310,
+                "y": 100
               }
             ]
           },
@@ -749,11 +849,11 @@
             },
             "vertices": [
               {
-                "x": 330,
+                "x": 320,
                 "y": 160
               },
               {
-                "x": 430,
+                "x": 420,
                 "y": 210
               }
             ]
@@ -779,6 +879,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -862,7 +963,6 @@
               ]
             },
             "id": "890b70b5-1167-4e4b-8f1a-f2646171eac8",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "étudiant\n",
@@ -896,6 +996,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -979,7 +1080,6 @@
               ]
             },
             "id": "711aeb7c-1711-4d19-9f7b-37e6adabf00f",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "enseignant\n",
@@ -1013,6 +1113,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1096,7 +1197,6 @@
               ]
             },
             "id": "dfb3a628-a0a1-4456-9c49-7c94a6596d99",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "administrateur\n",
@@ -1114,6 +1214,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "kihel mohamed",
-    "threatTop": 4
+    "threatTop": 10
   }
 }
